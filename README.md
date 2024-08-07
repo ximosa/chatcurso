@@ -1,0 +1,1 @@
+¿Cansado de perder tus marcadores importantes entre dispositivos? webgae marcadores es la solución que estabas buscando. Esta innovadora aplicación, desarrollada con Firebase, te permite crear, editar y borrar marcadores de forma intuitiva, todo sincronizado en tiempo real.
