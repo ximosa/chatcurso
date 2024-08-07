@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between; /* Cambia a space-between para distribuir elementos */
+    align-items: center;
+  }
+  
+  /* Estilos para el h1 */
+  header h1 {
+    margin: 0; /* Elimina los márgenes por defecto */
+    margin-left: 60px;
+    font-size: medium;
+  }
+  header a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-top: 60px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #241e1e;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #4285f4;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#bookmarks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.bookmark {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+.bookmark:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.bookmark img {
+    width: 16px;
+    height: 16px;
+}
+
+.bookmark a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bookmark p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.bookmark .created-by {
+    font-size: 12px;
+    color: #80868b;
+}
+
+#bookmarkForm {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#bookmarkForm h2 {
+    margin-top: 0;
+    color: #4285f4;
+}
+
+#bookmarkForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#bookmarkForm input[type="text"],
+#bookmarkForm input[type="url"],
+#bookmarkForm textarea,
+#bookmarkForm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#bookmarkForm button {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#bookmarkForm button[type="button"] {
+    background-color: #dadce0;
+    color: #3c4043;
+}
+
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    margin: 0 5px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">Webgae</a></h1>
+        <button id="addBookmarkBtn" style="display: none;">Añadir marcador</button>
+        <button id="loginBtn">Iniciar sesión</button>
+        <button id="logoutBtn" style="display: none;">Cerrar sesión</button>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="#" data-category="all">Todos</a></li>
+                <li><a href="#" data-category="trabajo">Trabajo</a></li>
+                <li><a href="#" data-category="ocio">Ocio</a></li>
+                <li><a href="#" data-category="aprendizaje">Aprendizaje</a></li>
+                <li><a href="#" data-category="otros">Otros</a></li>
+            </ul>
+        </nav>
+        <div id="bookmarkForm" style="display: none;">
+            <h2>Añadir/Editar Marcador</h2>
+            <form id="bookmarkFormElement">
+                <input type="hidden" id="bookmarkId">
+                <label for="bookmarkTitle">Título:</label>
+                <input type="text" id="bookmarkTitle" required>
+                <label for="bookmarkUrl">URL:</label>
+                <input type="url" id="bookmarkUrl" required>
+                <label for="bookmarkDescription">Descripción:</label>
+                <textarea id="bookmarkDescription"></textarea>
+                <label for="bookmarkCategory">Categoría:</label>
+                <select id="bookmarkCategory" required>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="ocio">Ocio</option>
+                    <option value="aprendizaje">Aprendizaje</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <button type="submit">Guardar</button>
+                <button type="button" id="cancelBookmark">Cancelar</button>
+            </form>
+        </div>
+    <main>
+        <div id="bookmarks"></div>
+        <div id="pagination"></div>
+       
+       
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
