@@ -1,12 +1,12 @@
 // Configuración de Firebase (reemplaza con tus propias credenciales)
 const firebaseConfig = {
-    apiKey: "AIzaSyDVfdpTGRmb1za0qfYp6fXr3nhOCb1hzaA",
-    authDomain: "blog-4b030.firebaseapp.com",
-    databaseURL: "https://blog-4b030.firebaseio.com",
-    projectId: "blog-4b030",
-    storageBucket: "blog-4b030.appspot.com",
-    messagingSenderId: "211870937968",
-    appId: "1:211870937968:web:76ffd1c492ac6eccfa15b5"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
   };
 
   firebase.initializeApp(firebaseConfig);
